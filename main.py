@@ -8,7 +8,7 @@ def main():
     novel = WebProcesses.Novel(NOVEL_BASE_URL, 0, 2110) # Change me
     novel.content_id = "chapter-content" # Change me
     novel.name = "A Record of a Mortal's Journey to Immortality".replace(' ', '_') # Change me
-    novel.extract_content(asynchronous=True, ratelimit=60)
+    novel.extract_content(asynchronous=True, ratelimit=60) # Change me
     novel.export("html")
 
     book = epub.EpubBook()
